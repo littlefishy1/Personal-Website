@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owin Gong &mdash; CS Engineer &amp; ML Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">OG</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#highlights">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="Owin_Gong_Resume.pdf" class="nav-resume" target="_blank">Resume</a></li>
+    </ul>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-grid">
+
+            <div class="hero-left">
+                <div class="hero-tag">FULL-STACK DEVELOPER &amp; ML ENGINEER</div>
+
+                <h1 class="hero-name">
+                    Hi, I'm
+                    <span class="name-accent">Owin Gong</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    I build intelligent, data-driven applications &mdash; from machine learning
+                    pipelines to full-stack web platforms. Currently pursuing my
+                    M.S. in CS at Columbia University.
+                </p>
+
+                <div class="hero-stats">
+                    <div>
+                        <span class="hero-stat-num">4</span>
+                        <span class="hero-stat-lbl">Projects</span>
+                    </div>
+                    <div>
+                        <span class="hero-stat-num">3.92</span>
+                        <span class="hero-stat-lbl">Columbia GPA</span>
+                    </div>
+                    <div>
+                        <span class="hero-stat-num">96.98%</span>
+                        <span class="hero-stat-lbl">ML Accuracy</span>
+                    </div>
+                    <div>
+                        <span class="hero-stat-num">1</span>
+                        <span class="hero-stat-lbl">Publication</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="Owin_Gong_Resume.pdf" class="btn-secondary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+
+            <!-- Code block -->
+            <div class="hero-code fade-in">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="dot dot-r"></div>
+                        <div class="dot dot-y"></div>
+                        <div class="dot dot-g"></div>
+                    </div>
+                    <span class="code-fname">owin_gong.py</span>
+                </div>
+                <div class="code-body">
+<pre><code><span class="kw">class</span> <span class="cls">MLEngineer</span><span class="pn">:</span>
+    <span class="kw">def</span> <span class="fn">__init__</span><span class="pn">(</span><span class="vr">self</span><span class="pn">):</span>
+        <span class="vr">self</span><span class="pn">.</span><span class="fn">name</span>      <span class="pn">=</span> <span class="st">"Owin Gong"</span>
+        <span class="vr">self</span><span class="pn">.</span><span class="fn">role</span>      <span class="pn">=</span> <span class="st">"CS @ Columbia"</span>
+        <span class="vr">self</span><span class="pn">.</span><span class="fn">interests</span> <span class="pn">= [</span>
+            <span class="st">"Machine Learning"</span><span class="pn">,</span>
+            <span class="st">"Full-Stack Dev"</span><span class="pn">,</span>
+            <span class="st">"Bioinformatics"</span>
+        <span class="pn">]</span>
+        <span class="vr">self</span><span class="pn">.</span><span class="fn">gpa</span>       <span class="pn">=</span> <span class="nu">3.92</span>
+
+    <span class="kw">def</span> <span class="fn">get_stack</span><span class="pn">(</span><span class="vr">self</span><span class="pn">):</span>
+        <span class="kw">return</span> <span class="pn">{</span>
+            <span class="st">"ml"</span><span class="pn">:</span>       <span class="pn">[</span><span class="st">"PyTorch"</span><span class="pn">,</span> <span class="st">"scikit-learn"</span><span class="pn">,</span>
+                         <span class="st">"CUDA"</span><span class="pn">,</span> <span class="st">"NLP"</span><span class="pn">],</span>
+            <span class="st">"backend"</span><span class="pn">:</span>  <span class="pn">[</span><span class="st">"Flask"</span><span class="pn">,</span> <span class="st">"REST APIs"</span><span class="pn">,</span>
+                         <span class="st">"MongoDB"</span><span class="pn">,</span> <span class="st">"Docker"</span><span class="pn">],</span>
+            <span class="st">"frontend"</span><span class="pn">: [</span><span class="st">"React"</span><span class="pn">,</span> <span class="st">"JavaScript"</span><span class="pn">,</span>
+                         <span class="st">"HTML/CSS"</span><span class="pn">],</span>
+            <span class="st">"cloud"</span><span class="pn">:</span>    <span class="pn">[</span><span class="st">"AWS"</span><span class="pn">,</span> <span class="st">"Google Cloud"</span><span class="pn">,</span>
+                         <span class="st">"GitHub Actions"</span><span class="pn">]</span>
+        <span class="pn">}</span></code></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-number">01.</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <p>
+                    I'm a Computer Science graduate student at <strong>Columbia University</strong>
+                    (GPA: 3.92) with a background in Mathematics-Computer Science and Bioinformatics
+                    from UC San Diego. My work spans machine learning, full-stack web development,
+                    and computational biology research.
+                </p>
+                <p>
+                    I've built <strong>predictive ML models achieving 96.98% accuracy</strong>,
+                    developed full-stack web applications that placed at hackathons, and contributed
+                    to published research on epigenetic regulation during brain development.
+                    I'm passionate about applying rigorous engineering to create software that
+                    genuinely solves real problems.
+                </p>
+                <p>
+                    Whether it's a React/Flask web app, a PyTorch neural network, or a
+                    bioinformatics pipeline &mdash; I write <strong>clean, well-tested code</strong>
+                    with a focus on performance and usability. Outside of code, I'm into
+                    cooking, drumming, esports coaching, and hiking.
+                </p>
+            </div>
+
+            <div class="skill-pillars fade-in">
+                <div class="pillar">
+                    <span class="pillar-icon">&#x1F916;</span>
+                    <div class="pillar-name">Machine Learning</div>
+                    <div class="pillar-text">PyTorch, scikit-learn, CUDA, NLP, model optimization &amp; pipelines</div>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-icon">&#x1F52C;</span>
+                    <div class="pillar-name">Computational Biology</div>
+                    <div class="pillar-text">RNA-seq analysis, genomic pipelines, chromatin mapping, bioinformatics</div>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-icon">&#x26A1;</span>
+                    <div class="pillar-name">Full-Stack Dev</div>
+                    <div class="pillar-text">React, Flask, MongoDB, REST APIs, Docker, CI/CD workflows</div>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-icon">&#x2601;&#xFE0F;</span>
+                    <div class="pillar-name">Cloud &amp; DevOps</div>
+                    <div class="pillar-text">AWS, Google Cloud, GitHub Actions, Docker, automated workflows</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PROJECTS ==================== -->
+<section id="projects">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-list">
+
+            <!-- PredLOL -->
+            <div class="project-card fade-in">
+                <div class="card-top">
+                    <span class="proj-type">ML Application</span>
+                    <div class="proj-links"><a href="https://github.com/owingong/PredLOL" class="proj-link" target="_blank" rel="noopener"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></div>
+                </div>
+                <h3 class="proj-title">PredLOL &mdash; League of Legends Composition Predictor</h3>
+                <p class="proj-desc">
+                    A Flask-based web platform for League of Legends draft analysis featuring win-rate
+                    prediction, synergy scoring, and personalized champion-pool management with visual
+                    feedback. Processes 12,000+ Riot API match records from high-tier ranked games.
+                </p>
+                <div class="contrib-label">Key Contributions</div>
+                <div class="contrib-item">Achieved <strong>96.98% model accuracy</strong> with anti-overfitting architecture and regularization in scikit-learn</div>
+                <div class="contrib-item">Integrated synergy scoring, matchup analysis, and win-rate differentials into a scalable recommendation pipeline</div>
+                <div class="contrib-item">Processed 12,000 Riot API match data points for high-tier ranked matches</div>
+                <div class="contrib-item">Built interactive draft analysis UI with visual feedback and personalized champion-pool management</div>
+                <div class="tech-list">
+                    <span class="tech">Python</span>
+                    <span class="tech">Flask</span>
+                    <span class="tech">scikit-learn</span>
+                    <span class="tech">React</span>
+                    <span class="tech">Riot API</span>
+                    <span class="tech">MongoDB</span>
+                </div>
+            </div>
+
+            <!-- LionSwap -->
+            <div class="project-card fade-in">
+                <div class="card-top">
+                    <span class="proj-type">Full-Stack Application</span>
+                    <div class="proj-links"><a href="https://github.com/owingong/LionSwap" class="proj-link" target="_blank" rel="noopener"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></div>
+                </div>
+                <h3 class="proj-title">LionSwap &mdash; Student Marketplace Platform</h3>
+                <p class="proj-desc">
+                    A student-to-student marketplace platform for Columbia University. Features user
+                    authentication, item listings, real-time messaging, and a clean, responsive UI
+                    built for a seamless campus buying and selling experience.
+                </p>
+                <div class="contrib-label">Key Contributions</div>
+                <div class="contrib-item">Designed and implemented the complete frontend UI independently</div>
+                <div class="contrib-item">Integrated frontend with backend REST APIs for seamless state management and UX</div>
+                <div class="contrib-item">Collaborated on backend endpoints supporting user authentication, item listings, and messaging</div>
+                <div class="tech-list">
+                    <span class="tech">React</span>
+                    <span class="tech">Flask</span>
+                    <span class="tech">REST APIs</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">GitHub Actions</span>
+                </div>
+            </div>
+
+            <!-- MSI Hackathon -->
+            <div class="project-card fade-in">
+                <div class="card-top">
+                    <span class="proj-type">&#x1F3C6; Hackathon Project</span>
+                    <div class="proj-links"><a href="https://github.com/owingong/MSI-Hackathon" class="proj-link" target="_blank" rel="noopener"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></div>
+                </div>
+                <h3 class="proj-title">MSI Hackathon &mdash; Esports Cafe Web Application</h3>
+                <p class="proj-desc">
+                    A reservation and check-in web app for an e-sports cafe built during the MSI Hackathon.
+                    Digitized error-prone handwritten PC assignment logs and won <strong>2nd place overall</strong>
+                    along with the <strong>Best Functionality Award</strong>.
+                </p>
+                <div class="contrib-label">Key Contributions</div>
+                <div class="contrib-item">Built a full reservation and check-in system to replace manual handwritten logs</div>
+                <div class="contrib-item">Designed MongoDB schemas and queries for PC and user data management</div>
+                <div class="contrib-item">Implemented real-time status change system for instant PC availability tracking</div>
+                <div class="tech-list">
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">MongoDB</span>
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                </div>
+            </div>
+
+            <!-- Diffana -->
+            <div class="project-card fade-in">
+                <div class="card-top">
+                    <span class="proj-type">Research Tool</span>
+                    <div class="proj-links"><a href="https://github.com/owingong/Diffana" class="proj-link" target="_blank" rel="noopener"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a></div>
+                </div>
+                <h3 class="proj-title">Diffana &mdash; RNA Differential Expression Analysis Tool</h3>
+                <p class="proj-desc">
+                    A Python command-line tool for RNA-seq differential expression analysis producing
+                    volcano plots and summary statistics. Achieved a <strong>25% runtime reduction</strong>
+                    compared to existing industry tools through algorithmic optimization.
+                </p>
+                <div class="contrib-label">Key Contributions</div>
+                <div class="contrib-item">Implemented normalization and imputation methods to handle missing values in large genomic datasets</div>
+                <div class="contrib-item">Achieved 25% runtime reduction vs. existing industry baselines</div>
+                <div class="contrib-item">Produces volcano plots and statistical summaries for differential expression analysis</div>
+                <div class="tech-list">
+                    <span class="tech">Python</span>
+                    <span class="tech">pandas</span>
+                    <span class="tech">scipy</span>
+                    <span class="tech">matplotlib</span>
+                    <span class="tech">Bioinformatics</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== RESEARCH & HIGHLIGHTS ==================== -->
+<section id="highlights">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Research &amp; Highlights</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="stats-row fade-in">
+            <div class="stat-box">
+                <span class="stat-val" data-count="1">0</span>
+                <div class="stat-lbl">Publication</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val" data-count="3">0</span>
+                <div class="stat-lbl">Years Research</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val">12K+</span>
+                <div class="stat-lbl">Data Points Processed</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-val">25%</span>
+                <div class="stat-lbl">Runtime Reduction</div>
+            </div>
+        </div>
+
+        <div class="fade-in">
+            <div class="hl-heading">Notable Contributions</div>
+            <div class="hl-grid">
+                <div class="hl-item">
+                    <span class="badge badge-pub">Publication</span>
+                    <span class="hl-desc">Cell Reports (submitted): Polycomb repressive complexes 1 and 2 independently and dynamically regulate euchromatin during cerebellar neurodevelopment</span>
+                </div>
+                <div class="hl-item">
+                    <span class="badge badge-res">Research</span>
+                    <span class="hl-desc">Implemented Python pipeline to convert semi-processed chromatin mapping data into analyzable heatmaps &mdash; UCSD Research Lab, 2022&ndash;2024</span>
+                </div>
+                <div class="hl-item">
+                    <span class="badge badge-res">Research</span>
+                    <span class="hl-desc">Applied normalization techniques on large datasets and benchmarked results against baselines to ensure accuracy</span>
+                </div>
+                <div class="hl-item">
+                    <span class="badge badge-disc">Discovery</span>
+                    <span class="hl-desc">Identified potential roles of histone modifications H3K27me1 vs. H3K27me3 during mouse brain development, providing novel epigenetic insights</span>
+                </div>
+                <div class="hl-item">
+                    <span class="badge badge-ach">Achievement</span>
+                    <span class="hl-desc">96.98% ML model accuracy with minimal overfitting on 12,000+ Riot API match records using scikit-learn</span>
+                </div>
+                <div class="hl-item">
+                    <span class="badge badge-award">Award</span>
+                    <span class="hl-desc">2nd place overall + Best Functionality Award at MSI Hackathon for the esports cafe PC management web application</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-number">04.</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid fade-in">
+            <div class="skill-cat">
+                <div class="skill-cat-name">Languages</div>
+                <div class="pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">C++</span>
+                    <span class="pill">C</span>
+                    <span class="pill">Haskell</span>
+                    <span class="pill">MATLAB</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">ML / AI</div>
+                <div class="pills">
+                    <span class="pill">PyTorch</span>
+                    <span class="pill">scikit-learn</span>
+                    <span class="pill">TensorFlow</span>
+                    <span class="pill">CUDA</span>
+                    <span class="pill">NLP</span>
+                    <span class="pill">HuggingFace</span>
+                    <span class="pill">Model Optimization</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Backend</div>
+                <div class="pills">
+                    <span class="pill">Flask</span>
+                    <span class="pill">REST APIs</span>
+                    <span class="pill">Docker</span>
+                    <span class="pill">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Frontend</div>
+                <div class="pills">
+                    <span class="pill">React</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">HTML / CSS</span>
+                    <span class="pill">Responsive Design</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Databases</div>
+                <div class="pills">
+                    <span class="pill">MongoDB</span>
+                    <span class="pill">PostgreSQL</span>
+                    <span class="pill">SQL</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Cloud &amp; DevOps</div>
+                <div class="pills">
+                    <span class="pill">AWS</span>
+                    <span class="pill">Google Cloud</span>
+                    <span class="pill">Docker</span>
+                    <span class="pill">GitHub Actions</span>
+                    <span class="pill">CI/CD</span>
+                    <span class="pill">Git</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Methodologies</div>
+                <div class="pills">
+                    <span class="pill">Test-Driven Dev</span>
+                    <span class="pill">OOP</span>
+                    <span class="pill">Database Design</span>
+                    <span class="pill">MVP Pattern</span>
+                    <span class="pill">Agile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <p class="footer-note">Designed &amp; Built by Owin Gong</p>
+            <div class="footer-links">
+                <a href="https://github.com/owingong" class="footer-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+                </a>
+                <a href="https://linkedin.com/in/owin-gong/" class="footer-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn
+                </a>
+                <a href="mailto:owin.k.gong@gmail.com" class="footer-link">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg> Email
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
